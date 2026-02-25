@@ -3,7 +3,7 @@ sensor:
   #  Outdoor temperature
   - platform: homeassistant
     entity_id: sensor.carport_motion_temperature
-    id: carport_temperature
+    id: carport.temperature
     on_value:
       - lvgl.label.update:
           id: temperatures
