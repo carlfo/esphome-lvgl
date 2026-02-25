@@ -12,7 +12,7 @@ sensor:
             args: [ '(int)round(id(outdoor_temperature).state)', '(int)round(x)' ]
 
   - platform: homeassistant
-    entity_id: plattingoppe_motion_temperature
+    entity_id: sensor.plattingoppe_motion_temperature
     id: outdoor_temperature
     on_value:
       - lvgl.label.update:
